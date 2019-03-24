@@ -186,10 +186,10 @@ public class MainActivity extends AppCompatActivity {
         Wsc wscClearGooglePlayStoreCache=new Wsc("Clear Google Play Store Cache\n7.Please click here to clear Google Play store cache.",R.drawable.googleplay);
         wscList.add(wscClearGooglePlayStoreCache);
 
-        Wsc wscInstallWeSing=new Wsc("Reinstall WeSing",R.drawable.wesing);
+        Wsc wscInstallWeSing=new Wsc("Reinstall WeSing\n8.Reinstall WeSing with GooglePlay store.",R.drawable.wesing);
         wscList.add(wscInstallWeSing);
 
-        Wsc wscZipWeSingLog=new Wsc("ZIP log and share",R.drawable.log);
+        Wsc wscZipWeSingLog=new Wsc("ZIP log and share\n9.Zip WeSing Log and share...",R.drawable.log);
         wscList.add(wscZipWeSingLog);
     }
 }
