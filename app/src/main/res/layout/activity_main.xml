@@ -4,28 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shadowColor="#ff000000"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="20"
+            android:text="1.全程连接VPN\n2.本机只保留可支付的Google账号,其他账号请删除.\n3.重新安装带有google签名的WeSing版本."
+            android:textColor="#ff0000"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="操作步骤:"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="@drawable/bian_kuang"
+            android:typeface="monospace"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="#ff000000"/>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="1.全程连接VPN\n2.本机只保留可支付的Google账号,其他账号请删除.\n3.按照以下步骤完成后,重新安装带有google签名的WeSing版本."
-            android:textSize="20dp"
-            android:textColor="#ff0000"
-            android:shadowColor="#ff000000"
-            android:shadowDx="5"
-            android:shadowDy="5"
-            android:shadowRadius="20"/>
+
         <ListView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:id="@+id/wsc_listview"
-            android:dividerHeight="5dp"
-            android:divider="#00000000">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bian_kuang"
+            android:divider="#FF000000"
+            android:dividerHeight="2dp">
 
         </ListView>
     </LinearLayout>
